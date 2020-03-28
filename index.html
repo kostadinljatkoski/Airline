@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>    <link href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/js.js">
+    </script>
+    <title>WW Airlines</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-1">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">WW Airlines</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Schedules <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages/flights.html">Flights</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="pages/arivals.html">Arrivals</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pages/service.html">Service</a></li>
+                        <li><a href="pages/FAQ.html">FAQ</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/aboutus.html">About Us</a></li>
+                        <li><a href="pages/contactus.html">Contact us</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3" id="buttons">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <p class="navbar-btn">
+                                <a href="pages/login.html">
+                                    <button href="pages/login.html" class="btn btn btn-md btn-danger">Login</button>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="navbar-btn">
+                                <a href="pages/signup.html">
+                                    <button href="pages/signup.html" class="btn btn btn-md btn-danger">Sign Up</button>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav> <!--Navigation-->
+<div class="row" id="header">
+    <div class="container-fluid">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="http://www.taofinancial.com/wp-content/uploads/2015/07/1-1400x500.png" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://abroad-internships.com/images/sized/uploads/sydney-1400x500.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://abroad-internships.com/images/sized/uploads/sydney-1400x500.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div> <!--Carousel -->
+<div class="row" id="form">
+    <div class="col-md-4 col-md-offset-7 col-sm-4 col-sm-offset-7">
+        <div class="panel panel-default" style="margin-top: 25px;">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="glyph" class="col-md-2">
+                                <span class="glyphicon glyphicon-flag"></span>
+                            </div>
+                            <div class="col-md-10" style="margin-left: -12px;">
+                                <input class="form-control " placeholder="Origin">
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div id="glyph" class="col-md-2">
+                                <span class="glyphicon glyphicon-heart"></span>
+                            </div>
+                            <div class="col-md-10" style="margin-left: -12px;">
+                                <input class="form-control " placeholder="Destination">
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div id="glyph" class="col-md-2">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                            <div class="col-md-10" style="margin-left: -12px;">
+                                <input class="form-control " placeholder="E-Mail">
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div id="glyph" class="col-md-2">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </div>
+                            <div class="col-md-10" style="margin-left: -12px;">
+                                <input class="form-control " placeholder="Name">
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="checkbox" style="margin-top: 15px;">
+                                    <label>
+                                        <input type="checkbox"> Send me discounts and promotions!
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="checkbox">
+                                    <div class="pull-right">
+                                        <button href="#" class="btn btn btn-lg btn-success">  <span class="glyphicon glyphicon-search"> </span>Find Flight</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--PANEL-->
+<div class="row" style="margin-top: -20px;">
+    <div class="container" id="container-center" style="background-color: #eee;padding-top: 70px;">
+        <div class="jumbotron">
+            <h1>Hello, there!</h1>
+            <p>We are happy to see you again. Would you like to continue from the last time? You will be redirected to login page!</p>
+            <p><a class="btn btn-primary btn-lg" href="pages/login.html" role="button">Yes, Log me In</a></p>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="text-center">
+                        <img class="img-circle" src="http://www.wikihow.com/images/a/ab/Smile-for-Better-Health-Step-8.jpg" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Cheap Flight every weekend</h2>
+                        <p>Discover some new destination around the world with tight pocket.</p>
+                        <p class="pull-right"><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="text-center">
+                        <img class="img-circle" src="http://teflcoursesireland.ie/wp-content/uploads/2015/06/TEFL-student-discount-280x280.jpg" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Students Discount</h2>
+                        <p>
+                            We offer special dicounts for students. Click on view details for more.
+                        </p>
+                        <p class="pull-right"><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="text-center">
+                        <img class="img-circle" src="https://dharmamerchantservices.com/wp-content/uploads/2016/08/moneyback.gif" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Refund</h2>
+                        <p>We have refund system if you change your mind. View details for more</p>
+                        <p class="pull-right"><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="page-header">
+            World Wide Promotions
+            <small>Cheap Prices Only Today</small>
+        </h1>
+        <div class="row promotions">
+            <div class="container">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from London Luton
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$20</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from Barcelona
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$20</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from Ljubljana
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$30</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from Skopje
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$15</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--Promotions-->
+        <div class="row promotions">
+            <div class="container">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from London Luton
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$20</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from Barcelona
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$20</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from Ljubljana
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$30</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="container-fluid promo">
+                        <div class="row">
+                            <img src="https://www.placehold.it/255x130" class="img-responsive center-block">
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    Cheap flights from Skopje
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="container-fluid">
+                                        <div class="pull-right" id="price">$15</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--Promotions-->
+
+    </div>
+</div> <!-- Content -->
+<footer>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="col-md-4">
+                <h3> Copyrights by Koki Ljatkoski </h3>
+            </div>
+            <div class="col-md-4 pull-right " style="position: relative;top: 0px;">
+                <ul class="social-network social-circle ">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+
+    </nav>
+
+</footer>
+</body>
+
+</html>

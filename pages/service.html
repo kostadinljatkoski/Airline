@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>    <link href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../scripts/js.js">
+    </script>
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-1">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">WW Airlines</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Schedules <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="flights.html">Flights</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="arivals.html">Arrivals</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="service.html">Service</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3" id="buttons">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <p class="navbar-btn">
+                                <a href="login.html" class="btn btn btn-md btn-danger">Login</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="navbar-btn">
+                                <a href="signup.html" class="btn btn btn-md btn-danger">Sign Up</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container" style="background-color: #eeeeee; margin-top:20px; margin-bottom:100px;">
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="text-uppercase">Our Services</h2>
+                    <div class="divider"></div>
+                    <p>We are offering quality services for our costumers world wide. Bellow you can check our free tools for calucaation prices with and without baggage.</p>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="pv-30 ph-20 service-block bordered text-center object-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                        <span style="font-size: 50px; color: #375a7f;"class="glyphicon glyphicon-plus"></span>                        <h3>Booking Fee</h3>
+                        <div class="divider clearfix"></div>
+                        <p>Administration fees, System Surcharge Fee – Applicable to bookings made by automated systems, Call Centre transaction fee
+                         etc.</p>
+                        <a href="page-services.html">Read More <i class="pl-5 fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="pv-30 ph-20 service-block bordered text-center object-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                        <span style="font-size: 50px; color: #375a7f;"class="glyphicon glyphicon-briefcase"></span>
+                        <h3>Baggage calculator</h3>
+                        <div class="divider clearfix"></div>
+                        <p>Baggage fees are calculated based on:
+                            date of travel (peak season, low season)
+                            whether you paid online, through the Wizz Call Centre or at the airport
+                            the weight of your checked-in bag </p>
+                        <div class="center"><button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary center-block">Calculate</button></div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="pv-30 ph-20 service-block bordered text-center object-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                        <span style="font-size: 50px; color: #375a7f;"class="glyphicon glyphicon-heart-empty"></span>                          <h3>Service Fees</h3>
+                        <div class="divider clearfix"></div>
+                        <p>WIZZ Discount Club Standard,WIZZ Discount Club Group,Assigned seat,On-Time Arrival Guarantee	etc.</p>
+                        <a href="page-services.html">Read More <i class="pl-5 fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title" id="lineModalLabel">Baggage Calculator</h3>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="origin">Origin</label>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="origin" placeholder="Enter Origin Country">
+                                </div>
+                                <div class="col-md-2">
+                                    <img id="flagImgOrigin" src="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="departure">Departure</label>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="departure" placeholder="Enter Departure Country">
+                                </div>
+                                <div class="col-md-2">
+                                    <img id="flagImgDeparture" src="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <h3>Date:</h3>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="text" style="margin-top:20px; margin-left: 20px;" id="datepicker" placeholder="Select your date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container-fluid">
+                                <button type="submit" class="btn btn-primary pull-right">Calculate</button>
+                            </div>
+                        </div>
+                        <label>
+                            <a href="#">How we calculate your fees</a>
+                        </label>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Schadule Flight</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save" role="button">Save for later</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="col-md-4">
+                <h3> Copyrights by Koki Ljatkoski </h3>
+            </div>
+            <div class="col-md-4 pull-right " style="position: relative;top: 0px;">
+                <ul class="social-network social-circle ">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+
+    </nav>
+
+</footer>
+</html>
